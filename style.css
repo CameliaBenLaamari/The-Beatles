@@ -1,0 +1,96 @@
+
+html, body { width: 100%; height: 100%; margin: 0 auto; text-align: center; }
+
+header {
+	background-image: url("backgr-img.jpg");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat:repeat;
+	background-size: contain;
+}
+
+.navigation-bar {
+    width: 80%;  
+    height: 30%; 
+}
+.logo {
+    height: inherit;
+    padding-top: 3%;
+    margin-left: 15%;
+    float: left;
+}
+#last{
+	margin-right: 60;
+}
+
+.navigation-bar a {
+    display: inline;
+    float: right;
+    margin-right: 20px;
+    height: 80px;       
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Fira Sans' ;
+    margin-top: 6%;
+
+  
+}
+
+
+
+
+#div2 h1 {
+	color: #FFFFFF;
+	font-family: 'DM Serif Display', serif;
+	font-size: 350%;
+	text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5), -3px 10px 12px rgba(0, 0, 0, 0.5);
+}
+#div2 {
+	margin-top: 70;
+	text-align: center;
+}
+#news a {
+	color: #FFFFFF;
+	font-family: 'Fira Sans';
+	display: inline-flex;
+	font-family: Fira Sans;
+	text-decoration: none;
+	background: #F44336;
+	border-radius: 20px;
+	text-align: center;
+	justify-content: center;
+	padding: 10px;
+	font-size: 20;
+}
+#sections {
+	display: inline-flex;
+}
+
+#sections section {
+	display: inline;
+	margin: 40px;
+}
+
+#sections img {
+	border-radius:10%;
+	width: 250px;
+	height: 250px;
+}
+
+.sec> h5 {
+
+	text-decoration: none;
+	text-align: left;
+	font-family: 'Fira Sans' ;
+	padding-left: 10px;
+}
+.title{
+	text-decoration: none;
+	text-align: left;
+	font-family: 'DM Serif Display', serif;
+	padding-left: 10px;
+	font-size: 40px;
+	margin-top: -20px;
+	padding-top: 0px;
+}
