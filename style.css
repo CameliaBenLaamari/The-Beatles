@@ -85,6 +85,25 @@ header {
 	font-family: 'Fira Sans' ;
 	padding-left: 10px;
 }
+.sec p {
+	width: 250px;
+	display: inline-block;
+	margin-top:0;
+	padding-top: 0;
+	text-align: justify;
+	font-family: 'Fira Sans';
+	font-size: 11px;
+
+}
+.sec a {
+	float: left;
+	border:solid;
+	border-radius: 20px;
+	border-width: 1px;
+	padding: 5px;
+	font-family: 'Fira Sans';
+
+}
 .title{
 	text-decoration: none;
 	text-align: left;
@@ -93,4 +112,14 @@ header {
 	font-size: 40px;
 	margin-top: -20px;
 	padding-top: 0px;
+	margin-bottom: 0;
 }
+ footer section {
+ 	background-color: #00000;
+ 	border: solid;
+ 	height: 10%;
+ }
+ #logo_bas {
+ 	width:100px;
+ 	height: 120px;
+ }
