@@ -1,5 +1,9 @@
 html, body{
-    width: 100%; height: 100%; margin: 0 auto; text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -7,69 +11,141 @@ a{
 }
 
 header{
-    background-image: url("https://bit.ly/2RZLzk9");
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+}
+
+.hero{
     width: 100%;
     height: 50vw;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.2)
+      ), url("https://bit.ly/3eFkNoV") center no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 2vw;
-    padding-right: 5vw;
-    padding-left: 5vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    transition: height .5s ease;
+}
+
+.scrolling{
+    background: white;
+    box-shadow: 0 3px 1vw rgba(0, 0, 0, .1);
+}
+
+.scrolling .navbar{
+    padding-top: 1vw;
+    padding-bottom: 0.7vw;
+}
+
+.scrolling #nav-ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.scrolling #nav-ul li a{
+    color: black;
+}
+
+.scrolling .navbar .logo{
+    background: url("https://bit.ly/3xAnnW4") center no-repeat;
+    background-size: contain;
+    height: 3vw;
+    width: 5vw;
+}
+
+.scrolling .navbar #menu{
+    color: black;
 }
 
 .logo{
-    height: 3vw;
-    width: auto;
+    background: url("https://bit.ly/3tRUEcN") center no-repeat;
+    background-size: contain;
+    height: 4vw;
+    width: 6vw;
 }
 
-.row{
-    height: 3vw;
+#menu{
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu:focus{
+    background: none;
+    outline: none;
+}
+
+#nav-ul{
+    float: right;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.row a{
-    font-family: 'Fira Sans', sans-serif;
+#nav-ul li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 1vw;
-    color: white;
     margin-left: 3vw;
 }
 
+#nav-ul li a{
+    color: white;
+}
+
 .banner{
-    display: inline-block;
-    text-align: center;
-    height: 30vw;
+    position: absolute;
+    text-align: left;
+    width: 40%;
+    margin-top: 5vw;
+    padding: 10vw;
+}
+
+.banner p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.banner p strong{
+    color: #5031ff;
+    font-size: 2vw;
 }
 
 h1{
-    display: block;
-    margin-top: 10vw;
-    font-family: 'DM Serif Display', serif;
-    font-size: 6vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 5vw;
     color: white;
-    text-align: center;
     line-height: 5vw;
 }
 
 .button{
-    display: block;
     text-align: center;
     color: white;
     border-radius: 5vw;
-    background: #f44336;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.2vw;
-    padding: 1vw;
-    margin-left: 12vw;
-    margin-right: 12vw;
-    margin-top: 7vw;
+    background: #5031ff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    padding: 1.2vw;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
     cursor: pointer;
 }
 
@@ -77,7 +153,7 @@ h1{
     background: black;
 }
 
-.featured{
+#featured{
     display: flex;
     justify-content: space-between;
     padding: 10vw;
@@ -102,21 +178,22 @@ h1{
 }
 
 .category{
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1vw;
     font-weight: 500;
 }
 
 h2{
-    font-family: 'DM Serif Display', serif;
-    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 2.8vw;
     line-height: 3vw;
     margin-top: 1.5vw;
     margin-bottom: 2vw;
 }
 
 .description{
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1vw;
     margin-top: 1.5vw;
     margin-bottom: 3vw;
@@ -132,7 +209,7 @@ h2{
     color: black;
     border-radius: 5vw;
     border: 0.15vw solid black;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 1vw;
     padding: 1vw;
@@ -142,9 +219,8 @@ h2{
 }
 
 .seemore:hover{
-    border-color: #f44336;
-    background: #f44336;
-    color: white;
+    border-color: #5031ff;
+    color: #5031ff;
 }
 
 footer{
@@ -154,7 +230,7 @@ footer{
     margin-top: 10vw;
     padding: 5vw;
     color: white;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1vw;
     text-align: left;
@@ -168,11 +244,11 @@ footer{
     justify-content: space-between;
 }
 
-.column{
+.column, .first-column{
     width: 10vw;
 }
 
-.column a{
+.column a, .first-column a{
     display: block;
     color: white;
     line-height: 2vw;
@@ -192,4 +268,170 @@ footer{
 
 .icon{
     height: 2vw;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px){
+    .hero{
+        height: 100vh;
+    }
+
+    #nav-ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 5vw;
+        padding-right: 0;
+    }
+
+    #nav-ul.show{
+        display: block;
+        text-align: right;
+        float: right;
+    }
+
+    #nav-ul li{
+        margin-left: 0;
+    }
+
+    #nav-ul li a{
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+
+    .scrolling #nav-ul li a{
+        color: black;
+    }
+
+    .scrolling #nav-ul{
+        margin-bottom: 2vw;
+        background: none;
+    }
+
+    .logo{
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .scrolling .navbar .logo{
+        width: 12vw;
+        height: 12vw;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    .banner{
+        width: 50%;
+        padding: 10vw;
+        bottom: 5vh;
+    }
+
+    .banner p{
+        display: none;
+    }
+
+    h1{
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+
+    .button{
+        font-size: 3vw;
+        border-radius: 5vh;
+        padding: 2vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    #featured{
+        display: grid;
+        margin-top: 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        width: 60vw;
+        max-height: 200vh;
+        margin-bottom: 10vw;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .image{
+        height: 100%;
+        width: 100%;
+        border-radius: 5vw;
+    }
+
+    .category{
+        font-size: 3.5vw;
+    }
+
+    h2{
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .description{
+        font-size: 3.5vw;
+        margin-bottom: 5vh;
+    }
+
+    .seemore{
+        font-size: 3.5vw;
+        padding: 2vw;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+
+    footer{
+        height: 35vh;
+        padding: 10vw;
+        align-items: center;
+    }
+
+    footer .column{
+        display: none;
+    }
+
+    footer .columns{
+        text-align: center;
+    }
+
+    footer .first-column{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .footerlogo{
+        width: 20vw;
+    }
+
+    footer .icons{
+        margin-top: 2vw;
+        max-width: 100%;
+        display: flex;
+        justify-items: space-between;
+        text-align: center;
+        align-items: baseline;
+        padding-right: 33vw;
+        padding-left: 33vw;
+    }
+
+    footer .icon{
+        height: 5vw;
+        width: 5vw;
+    }
+
+    footer p{
+        margin-top: 10vw;
+        font-size: 2vw;
+        text-align: center;
+    }
 }
