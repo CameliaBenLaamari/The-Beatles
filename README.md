@@ -5,11 +5,11 @@ Run ``` node ./dist/app.js ``` from the command line and access the web page fro
 
 Old version (27/04/2021):
 
-![The Beatles](https://user-images.githubusercontent.com/76062686/116243194-998f4580-a75e-11eb-84e9-f4c7b71fcb3c.png)
+![old version](https://user-images.githubusercontent.com/76062686/116243194-998f4580-a75e-11eb-84e9-f4c7b71fcb3c.png)
 
 Last update (02/05/2021):
 
-![iPad](https://user-images.githubusercontent.com/76062686/116830817-dff00480-aba3-11eb-888b-8cba0c1b98f9.png)
+![new version](https://user-images.githubusercontent.com/76062686/116831144-81c42100-aba5-11eb-8b58-a85fa6aca8a8.png)
 
 ## Commits
 - 27/04/2021: Uploading index.html and styles.css
