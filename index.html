@@ -5,28 +5,35 @@
         <title>The Beatles</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css">
+        <script language="JavaScript" type="text/javascript" src="scripts/main.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="icon" href="https://bit.ly/2R2GDKK" />
     </head>
     <body>
         <header>
             <nav class="navbar">
-                <img class="logo" src="https://bit.ly/3tRUEcN">
-                <div class="row">
-                    <a href="" >HOME</a>
-                    <a href="">DISCOGRAPHY</a>
-                    <a href="">NEWS</a>
-                    <a href="">PHOTOS</a>
+                <div class="logo"></div>
+                <div id="menu">
+                    <i class="material-icons">menu</i>
                 </div>
+                <ul id="nav-ul">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">DISCOGRAPHY</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">PHOTOS</a></li>
+                </ul>
             </nav>
-            <div class="banner">
-                <h1>The Beatles <br> like you've never <br> seen before.</h1>
-                <a class="button">Discover latest news</a>
-            </div>
-            </section>
         </header>
-        <section class="featured">
+        <div class="hero">
+            <div class="banner">
+                <p><strong>>&nbsp;</strong>&nbsp;Hello, NAME_PLACEHOLDER</p>
+                <h1>The Beatles<br>like you've never seen before.</h1>
+                <a class="button" href="#featured">Discover latest news</a>
+            </div>
+        </div>
+        <section id="featured">
             <div class="card">
                 <img class="image" src="https://bit.ly/3dZOCBH">
                 <p class="category">DISCOGRAPHY</p>
@@ -51,7 +58,7 @@
         </section>
         <footer>
             <div class="columns">
-                <div class="column">
+                <div class="first-column">
                     <img class="footerlogo" src="https://bit.ly/3tRUEcN">
                     <div class="icons">
                         <a href="https://bit.ly/2Qze1Jm" target=”_blank”>
