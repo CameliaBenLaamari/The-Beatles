@@ -1,11 +1,20 @@
 # The Beatles
-The Beatles is a responsive web page built in HTML5 and CSS3. It is an online repository of information on The Beatles from a range of sources.
+The Beatles is a responsive server-side web application. It is an online repository of information on The Beatles from a range of sources.
 
-Here's an overview:
+Run ``` node ./dist/app.js ``` from the command line and access the web page from ``` http://localhost:8080 ```.
+
+Old version (27/04/2021):
 
 ![The Beatles](https://user-images.githubusercontent.com/76062686/116243194-998f4580-a75e-11eb-84e9-f4c7b71fcb3c.png)
 
-NB: All the links in the code source have been shortened using https://bitly.com URL shortener.
+Last update (02/05/2021):
+
+![iPad](https://user-images.githubusercontent.com/76062686/116830817-dff00480-aba3-11eb-888b-8cba0c1b98f9.png)
+
+## Commits
+- 27/04/2021: Uploading index.html and styles.css
+- 01/05/2021: Updating index.html and styles.css + uploading main.js
+- 02/05/2021: Updating index.html + uploading MVP source code + reorganizing image files
 
 ## Team members
 - Mohamed Karaa - INDP2D
