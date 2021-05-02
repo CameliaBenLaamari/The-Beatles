@@ -9,7 +9,7 @@ Old version (27/04/2021):
 
 Last update (02/05/2021):
 
-![new version](https://user-images.githubusercontent.com/76062686/116831144-81c42100-aba5-11eb-8b58-a85fa6aca8a8.png)
+![new version](https://user-images.githubusercontent.com/76062686/116831222-e7b0a880-aba5-11eb-90ef-e5f3e721da67.png)
 
 ## Commits
 - 27/04/2021: Uploading index.html and styles.css
