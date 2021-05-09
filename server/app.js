@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const user_model_1 = require("./src/models/user.model");
-const user_presenter_1 = require("./src/presenters/user.presenter");
-const user_repository_1 = require("./src/repositories/user.repository");
-const MVPEvent_1 = require("./src/util/MVPEvent");
-const user_view_1 = require("./src/views/user.view");
+const user_model_1 = require("./scripts/mvp/models/user.model");
+const user_presenter_1 = require("./scripts/mvp/presenters/user.presenter");
+const user_repository_1 = require("./scripts/mvp/repositories/user.repository");
+const MVPEvent_1 = require("./scripts/mvp/util/MVPEvent");
+const user_view_1 = require("./scripts/mvp/views/user.view");
 var http = require("http");
 var path = require("path");
 var fs = require("fs");
