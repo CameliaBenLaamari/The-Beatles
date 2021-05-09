@@ -1,0 +1,437 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+}
+
+.hero{
+    width: 100%;
+    height: 50vw;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.2)
+      ), url("../images/the-beatles.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    transition: height .5s ease;
+}
+
+.scrolling{
+    background: white;
+    box-shadow: 0 3px 1vw rgba(0, 0, 0, .1);
+}
+
+.scrolling .navbar{
+    padding-top: 1vw;
+    padding-bottom: 0.7vw;
+}
+
+.scrolling #nav-ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.scrolling #nav-ul li a{
+    color: black;
+}
+
+.scrolling .navbar .logo{
+    background: url("../images/black-logo.png") center no-repeat;
+    background-size: contain;
+    height: 3vw;
+    width: 5vw;
+}
+
+.scrolling .navbar #menu{
+    color: black;
+}
+
+.logo{
+    background: url("../images/white-logo.png") center no-repeat;
+    background-size: contain;
+    height: 4vw;
+    width: 6vw;
+}
+
+#menu{
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu:focus{
+    background: none;
+    outline: none;
+}
+
+#nav-ul{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+#nav-ul li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    margin-left: 3vw;
+}
+
+#nav-ul li a{
+    color: white;
+}
+
+.banner{
+    position: absolute;
+    text-align: left;
+    width: 40%;
+    margin-top: 5vw;
+    padding: 10vw;
+}
+
+#greet{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.banner p strong{
+    color: #5031ff;
+    font-size: 2vw;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 5vw;
+    color: white;
+    line-height: 5vw;
+}
+
+.button{
+    text-align: center;
+    color: white;
+    border-radius: 5vw;
+    background: #5031ff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    padding: 1.2vw;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: black;
+}
+
+#featured{
+    display: flex;
+    justify-content: space-between;
+    padding: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.card{
+    width: 17vw;
+    max-height: 40vw;
+    display: block;
+    justify-content: space-between;
+    text-align: left;
+    text-overflow: hidden;
+}
+
+.image{
+    width: 17vw;
+    height: 17vw;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+.category{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 2.8vw;
+    line-height: 3vw;
+    margin-top: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+.description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.seemore{
+    text-align: center;
+    color: black;
+    border-radius: 5vw;
+    border: 0.15vw solid black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    padding: 1vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    cursor: pointer;
+}
+
+.seemore:hover{
+    border-color: #5031ff;
+    color: #5031ff;
+}
+
+footer{
+    background: black;
+    max-width: 100%;
+    height: 15vw;
+    margin-top: 10vw;
+    padding: 5vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    text-align: left;
+    line-height: 1vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column, .first-column{
+    width: 10vw;
+}
+
+.column a, .first-column a{
+    display: block;
+    color: white;
+    line-height: 2vw;
+}
+
+.footerlogo{
+    width: 7vw;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 5vw;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+}
+
+.icon{
+    height: 2vw;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px){
+    .hero{
+        height: 100vh;
+    }
+
+    #nav-ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 5vw;
+        padding-right: 0;
+    }
+
+    #nav-ul.show{
+        display: block;
+        text-align: right;
+        float: right;
+    }
+
+    #nav-ul li{
+        margin-left: 0;
+    }
+
+    #nav-ul li a{
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+
+    .scrolling #nav-ul li a{
+        color: black;
+    }
+
+    .scrolling #nav-ul{
+        margin-bottom: 2vw;
+        background: none;
+    }
+
+    .logo{
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .scrolling .navbar .logo{
+        width: 12vw;
+        height: 12vw;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    .banner{
+        width: 50%;
+        padding: 10vw;
+        bottom: 5vh;
+    }
+
+    .banner p{
+        display: none;
+    }
+
+    h1{
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+
+    .button{
+        font-size: 3vw;
+        border-radius: 5vh;
+        padding: 2vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    #featured{
+        display: grid;
+        margin-top: 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        width: 60vw;
+        max-height: 200vh;
+        margin-bottom: 10vw;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .image{
+        height: 100%;
+        width: 100%;
+        border-radius: 5vw;
+    }
+
+    .category{
+        font-size: 3.5vw;
+    }
+
+    h2{
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .description{
+        font-size: 3.5vw;
+        margin-bottom: 5vh;
+    }
+
+    .seemore{
+        font-size: 3.5vw;
+        padding: 2vw;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+
+    footer{
+        height: 35vh;
+        padding: 10vw;
+        align-items: center;
+    }
+
+    footer .column{
+        display: none;
+    }
+
+    footer .columns{
+        text-align: center;
+    }
+
+    footer .first-column{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .footerlogo{
+        width: 20vw;
+    }
+
+    footer .icons{
+        margin-top: 2vw;
+        max-width: 100%;
+        display: flex;
+        justify-items: space-between;
+        text-align: center;
+        align-items: baseline;
+        padding-right: 33vw;
+        padding-left: 33vw;
+    }
+
+    footer .icon{
+        height: 5vw;
+        width: 5vw;
+    }
+
+    footer p{
+        margin-top: 10vw;
+        font-size: 2vw;
+        text-align: center;
+    }
+}
