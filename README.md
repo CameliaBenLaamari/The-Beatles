@@ -1,7 +1,7 @@
 # The Beatles
 The Beatles is a responsive server-side web application. It is an online repository of information on The Beatles from a range of sources.
 
-Run ``` node ./dist/app.js ``` from the command line and access the web page from ``` http://localhost:8080 ```.
+Run ``` node ./server/app.js ``` from the command line and access the web page from ``` http://localhost:8080 ```.
 
 Old version (27/04/2021):
 
@@ -15,6 +15,7 @@ Last update (02/05/2021):
 - 27/04/2021: Uploading index.html and styles.css
 - 01/05/2021: Updating index.html and styles.css + uploading main.js
 - 02/05/2021: Updating index.html + uploading MVP source code + reorganizing image files
+- 09/05/2021: Updating folder structure + uploading server-side developing code
 
 ## Team members
 - Mohamed Karaa - INDP2D
