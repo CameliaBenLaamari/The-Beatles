@@ -19,7 +19,6 @@ const client  = mqtt.connect('ws://test.mosquitto.org')
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = 'ChatCord Bot';
 
 // Run when client connects
 io.on('connection', socket => {
