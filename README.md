@@ -1,10 +1,11 @@
 # The Beatles
 The Beatles is a responsive server-side web application. It is an online repository of information on The Beatles from a range of sources.
 
-Run ``` node ./server/app.js ``` from the command line and access the web page from ``` http://localhost:8080 ```.
-The chat app is accessible, just temporarily, on ``` http://localhost:3000 ``` by running ``` node ./chat/server.js ```.
+Run ``` node ./server/app.js ``` and ``` node ./scripts/chat/server.js ``` on two different terminals.
+The front-end server is configured to listen on PORT 8080 via the url ``` http://localhost:8080 ```, and the chat server on PORT 3030 via the url ``` http://localhost:3000 ```.
 
-![new version](https://user-images.githubusercontent.com/76062686/116831222-e7b0a880-aba5-11eb-90ef-e5f3e721da67.png)
+![home](https://user-images.githubusercontent.com/76062686/116831222-e7b0a880-aba5-11eb-90ef-e5f3e721da67.png)
+![chat](https://user-images.githubusercontent.com/76062686/121790804-21c88d80-cbdb-11eb-9331-2f124395a046.png)
 
 ## Commits
 - 27/04/2021: Uploading index.html and styles.css
@@ -12,7 +13,8 @@ The chat app is accessible, just temporarily, on ``` http://localhost:3000 ``` b
 - 02/05/2021: Updating index.html + uploading MVP source code + reorganizing image files
 - 09/05/2021: Updating folder structure + uploading server-side developing code
 - 30/05/2021: Adding a chat part (temporarily listening on a separate server) implemented using websockets
-- 06/06/2021: Editing the chat app
+- 06/06/2021: Editing the chat page and linking it to the rest of the application
+- 13/06/2021: Updating folder structure and README.md
 
 ## Team members
 - Mohamed Karaa - INDP2D
