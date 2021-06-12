@@ -4,6 +4,7 @@ import { UserRepository } from "./mvp/repositories/user.repository";
 import { IntentEvent } from "./mvp/util/MVPEvent";
 import { ViewUser } from "./mvp/views/user.view";
 var http = require("http");
+var io = require("socket.io")(http);
 var path = require("path");
 var fs = require("fs");
 
@@ -91,3 +92,7 @@ http
     if (request.method == "POST") postRequests(request, response);
   })
   .listen(8080);
+
+io.on("connection", socket => {
+  console.log("Connected!")
+});
