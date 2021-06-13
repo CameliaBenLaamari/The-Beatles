@@ -2,9 +2,9 @@
 The Beatles is a responsive VanillaJS web application. It is an online repository of information on The Beatles from a range of sources.
 
 Run ``` node ./server/app.js ``` and ``` node ./scripts/chat/server.js ``` on two different terminals.
-The front-end server is configured to listen on PORT 8080 via the url ``` http://localhost:8080 ```, and the chat server on PORT 3000 via the url ``` http://localhost:3000 ```.
+The front-end server is configured to listen on PORT 8080 via the url ``` http://localhost:8080/ ```, and the chat server on PORT 3000 via the url ``` http://localhost:3000/ ```.
 
-NB: Extract the ``` node_modules.zip ``` file to get it working.
+NB: Extract the ``` node_modules.zip ``` file inside the folder ``` ./scripts/chat ``` to get it working.
 
 ![home](https://user-images.githubusercontent.com/76062686/116831222-e7b0a880-aba5-11eb-90ef-e5f3e721da67.png)
 ![chat](https://user-images.githubusercontent.com/76062686/121790875-f5f9d780-cbdb-11eb-985a-351dc5de5e51.png)
